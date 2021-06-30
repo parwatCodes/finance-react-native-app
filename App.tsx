@@ -1,11 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import OnBoarding from './src/screens/onBoarding';
+import OnBoardingNav from './src/screens/onBoarding/onBoardingNav';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <OnBoarding />
+      {/* <OnBoardingNav /> */}
+    </SafeAreaView>
   );
 }
 
