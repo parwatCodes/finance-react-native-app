@@ -17,22 +17,23 @@ const OnBoarding = () => {
   }
 
   function getOnBoardingScreen() {
-    switch (onBoardScreenNo) {
-      case 1:
-        return <OnBoarding1 />;
-      case 2:
-        return <OnBoarding2 />;
-      case 3:
-        return <OnBoarding3 />;
-      default:
-        return <Login />;
-    }
+    // switch (onBoardScreenNo) {
+    //   case 1:
+    //     return <OnBoarding1 />;
+    //   case 2:
+    //     return <OnBoarding2 />;
+    //   case 3:
+    //     return <OnBoarding3 />;
+    //   default:
+    //     return <Login />;
+    // }
+    return <Login />
   }
 
   return <>
     <SafeAreaView style={styles.mainContainer}>
       {getOnBoardingScreen()}
-      <OnBoardingNav handleNextScreen={handleNextScreen} onBoardScreenNo={onBoardScreenNo} />
+      {/* <OnBoardingNav handleNextScreen={handleNextScreen} onBoardScreenNo={onBoardScreenNo} /> */}
     </SafeAreaView>
   </>;
 };
